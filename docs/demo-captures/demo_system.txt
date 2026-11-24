@@ -1,0 +1,147 @@
+{
+  "mode": "synthetic CS workspace cycle; no external actions",
+  "account_review_prep": {
+    "account_id": "account-demo",
+    "recent_stories": [
+      {
+        "gid": "submission-demo",
+        "account_id": "account-demo",
+        "kind": "form_submission",
+        "created_at": "2030-01-01T12:00:00Z",
+        "evidence_id": "demo-message",
+        "text": "Please help with the next step.\nThank you!"
+      }
+    ],
+    "open_tasks": [
+      {
+        "gid": "task-demo-open",
+        "account_id": "account-demo",
+        "name": "Review next step",
+        "assignee": "Demo CSM",
+        "completed": false,
+        "due_on": "2030-01-01T18:00:00Z",
+        "section": "In Progress"
+      }
+    ],
+    "unresolved_decisions": [
+      {
+        "account_id": "account-demo",
+        "question": "Approve next step?",
+        "owner": "Demo CSM"
+      }
+    ],
+    "check_in_status": "not verified by preparing this summary",
+    "coverage_complete": true
+  },
+  "teammate_proposals": [
+    {
+      "task_gid": "task-demo",
+      "field": "health",
+      "expected": null,
+      "proposed": "green",
+      "evidence_id": "evidence-demo"
+    }
+  ],
+  "exception_queue": [],
+  "end_of_day": {
+    "status": "mock coverage complete",
+    "coverage": {
+      "intake": {
+        "submissions": [
+          {
+            "gid": "submission-demo",
+            "account_id": "account-demo",
+            "kind": "form_submission",
+            "created_at": "2030-01-01T12:00:00Z",
+            "evidence_id": "demo-message",
+            "text": "Please help with the next step.\nThank you!"
+          }
+        ],
+        "complete": true,
+        "completed_through": "2030-01-02T00:00:00Z",
+        "warning": null
+      },
+      "tasks": {
+        "alerts": [
+          {
+            "task": {
+              "gid": "task-demo-open",
+              "account_id": "account-demo",
+              "name": "Review next step",
+              "assignee": "Demo CSM",
+              "completed": false,
+              "due_on": "2030-01-01T18:00:00Z",
+              "section": "In Progress"
+            },
+            "reasons": [
+              "newly relevant",
+              "newly due"
+            ]
+          }
+        ],
+        "missing_requires_verification": [],
+        "complete": true,
+        "baseline_can_advance": true,
+        "baseline_policy": "merge current; retain unverified missing tasks",
+        "retained_baseline": [
+          {
+            "gid": "task-demo-open",
+            "account_id": "account-demo",
+            "name": "Review next step",
+            "assignee": "Demo CSM",
+            "completed": false,
+            "due_on": "2030-01-01T18:00:00Z",
+            "section": "In Progress"
+          }
+        ]
+      }
+    },
+    "check_ins": {
+      "account-demo": {
+        "evidence_id": "demo-note",
+        "status": "caller-attested mock completion"
+      }
+    },
+    "check_ins_not_verified": [],
+    "unresolved_decisions": [
+      {
+        "account_id": "account-demo",
+        "question": "Approve next step?",
+        "owner": "Demo CSM"
+      }
+    ],
+    "engagement_proposals": [
+      {
+        "proposals": [
+          {
+            "account_id": "account-demo",
+            "name": "Review next step",
+            "assignee": "Demo CSM",
+            "due_on": "2030-01-03",
+            "evidence_id": "demo-note",
+            "status": "proposal only"
+          }
+        ],
+        "manual_review": [],
+        "writes_performed": 0
+      }
+    ],
+    "handoff_manifest": {
+      "count": 1,
+      "drafts": [
+        {
+          "id": "draft-demo",
+          "account_id": "account-demo",
+          "kind": "status_update",
+          "text": "Draft only: weekly account summary."
+        }
+      ],
+      "manifest_hash": "75d4cc0d7af146d1dda548e00ae65c1eed5891c37f70ee167daac252ea0ea984",
+      "status": "requires human review; nothing posted"
+    },
+    "mock_teammate_audit": [],
+    "external_writes": 0,
+    "posted_to_asana": 0
+  }
+}
+

@@ -1,0 +1,16 @@
+{
+  "synthetic": true,
+  "note": "Made-up records in an Asana-like shape. Not exported from any real workspace.",
+  "account_tasks": [
+    {"gid": "task-demo-01", "account_id": "account-demo-01", "name": "Account 01 quarterly review", "period": "2030-Q1", "custom_fields": {"health": null}},
+    {"gid": "task-demo-02", "account_id": "account-demo-02", "name": "Account 02 quarterly review", "period": "2030-Q1", "custom_fields": {"health": null}},
+    {"gid": "task-demo-03", "account_id": "account-demo-03", "name": "Account 03 quarterly review", "period": "2030-Q1", "custom_fields": {"health": null}}
+  ],
+  "evidence": [
+    {"id": "evidence-demo-01", "account_id": "account-demo-01", "field": "health", "period": "2030-Q1", "value": "green"},
+    {"id": "evidence-demo-01", "account_id": "account-demo-01", "field": "health", "period": "2030-Q1", "value": "green"},
+    {"id": "evidence-demo-03a", "account_id": "account-demo-03", "field": "health", "period": "2030-Q1", "value": "yellow"},
+    {"id": "evidence-demo-03b", "account_id": "account-demo-03", "field": "health", "period": "2030-Q1", "value": "red"}
+  ]
+}
+

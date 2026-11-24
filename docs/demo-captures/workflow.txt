@@ -1,0 +1,25 @@
+{
+  "mode": "review only; no Asana writes",
+  "proposals": [
+    {
+      "task_gid": "task-demo-01",
+      "field": "health",
+      "expected": null,
+      "proposed": "green",
+      "evidence_id": "evidence-demo-01"
+    }
+  ],
+  "exception_queue": [
+    {
+      "task_gid": "task-demo-02",
+      "queue": "Exceptions",
+      "reason": "no evidence"
+    },
+    {
+      "task_gid": "task-demo-03",
+      "queue": "Exceptions",
+      "reason": "ambiguous evidence"
+    }
+  ]
+}
+

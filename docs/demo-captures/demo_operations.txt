@@ -1,0 +1,200 @@
+{
+  "mode": "synthetic planning only; no Asana connections, posts or updates",
+  "intake_coverage": {
+    "submissions": [
+      {
+        "gid": "submission-demo-1",
+        "account_id": "account-demo-1",
+        "kind": "form_submission",
+        "created_at": "2030-01-01T12:00:00Z",
+        "evidence_id": "demo-source-1",
+        "text": "Please review our next step.\nThank you!"
+      }
+    ],
+    "complete": true,
+    "completed_through": "2030-01-02T00:00:00Z",
+    "warning": null
+  },
+  "signal_triage": {
+    "flags": [
+      {
+        "account_id": "account-demo-1",
+        "period": "2030-Q1",
+        "reasons": [
+          "utilization below 70% floor",
+          "qualitative: champion departed",
+          "support engagement above ceiling"
+        ],
+        "status": "flagged for human review"
+      }
+    ],
+    "escalations": [
+      {
+        "account_id": "account-demo-2",
+        "period": "2030-Q1",
+        "reason": "signal data missing: utilization"
+      }
+    ],
+    "evaluated": 2,
+    "note": "low utilization is a symptom; review finds the cause"
+  },
+  "task_attention": {
+    "alerts": [
+      {
+        "task": {
+          "gid": "task-demo-1",
+          "account_id": "account-demo-1",
+          "assignee": "Demo CSM",
+          "completed": false,
+          "due_on": "2030-01-01T18:00:00Z",
+          "name": "Review proposed next step",
+          "section": "In Progress"
+        },
+        "reasons": [
+          "newly relevant",
+          "newly due"
+        ]
+      }
+    ],
+    "missing_requires_verification": [],
+    "complete": true,
+    "baseline_can_advance": true,
+    "baseline_policy": "merge current; retain unverified missing tasks",
+    "retained_baseline": [
+      {
+        "gid": "task-demo-1",
+        "account_id": "account-demo-1",
+        "assignee": "Demo CSM",
+        "completed": false,
+        "due_on": "2030-01-01T18:00:00Z",
+        "name": "Review proposed next step",
+        "section": "In Progress"
+      }
+    ]
+  },
+  "account_review_prep": {
+    "account_id": "account-demo-1",
+    "recent_stories": [
+      {
+        "gid": "submission-demo-1",
+        "account_id": "account-demo-1",
+        "kind": "form_submission",
+        "created_at": "2030-01-01T12:00:00Z",
+        "evidence_id": "demo-source-1",
+        "text": "Please review our next step.\nThank you!"
+      }
+    ],
+    "open_tasks": [
+      {
+        "gid": "task-demo-1",
+        "account_id": "account-demo-1",
+        "assignee": "Demo CSM",
+        "completed": false,
+        "due_on": "2030-01-01T18:00:00Z",
+        "name": "Review proposed next step",
+        "section": "In Progress"
+      }
+    ],
+    "unresolved_decisions": [
+      {
+        "account_id": "account-demo-1",
+        "question": "Approve proposed next step?",
+        "owner": "Demo CSM"
+      }
+    ],
+    "check_in_status": "not verified by preparing this summary"
+  },
+  "post_engagement": {
+    "proposals": [
+      {
+        "account_id": "account-demo-1",
+        "name": "Review the proposed next step",
+        "assignee": "Demo CSM",
+        "due_on": "2030-01-03",
+        "evidence_id": "demo-note-1",
+        "status": "proposal only"
+      }
+    ],
+    "manual_review": [
+      {
+        "text": "Consider a future follow-up",
+        "reason": "not a complete explicit commitment for this account"
+      }
+    ],
+    "writes_performed": 0
+  },
+  "portfolio_health": {
+    "accounts": 2,
+    "health_counts": {
+      "green": 1,
+      "unknown": 1
+    },
+    "unknown_health": [
+      "account-demo-2"
+    ],
+    "unreviewed": [
+      {
+        "account_id": "account-demo-2",
+        "last_reviewed_at": null,
+        "reason": "no verified review inside 30 days"
+      }
+    ],
+    "note": "counts describe supplied records only; blank health is unknown, not healthy"
+  },
+  "capability_map": {
+    "proposals": [
+      {
+        "workflow_id": "wf-demo-1",
+        "candidate": "ai_studio_rule",
+        "rationale": "high-volume repeatable work fits a no-code AI Studio rule",
+        "status": "candidate only; human validates fit, cost and governance"
+      },
+      {
+        "workflow_id": "wf-demo-2",
+        "candidate": "ai_teammate",
+        "rationale": "context-and-judgment work fits an AI Teammate with checkpoints and approvals",
+        "status": "candidate only; human validates fit, cost and governance"
+      },
+      {
+        "workflow_id": "wf-demo-3",
+        "candidate": "mcp_integration",
+        "rationale": "work spanning external tools fits an integration over Asana MCP server",
+        "status": "candidate only; human validates fit, cost and governance"
+      }
+    ],
+    "built": 0
+  },
+  "adoption_benchmarks": {
+    "results": [
+      {
+        "account_id": "account-demo-1",
+        "day": 30,
+        "target": 1,
+        "actual": 2,
+        "status": "on track",
+        "ai_requests": 140
+      }
+    ],
+    "escalations": [
+      {
+        "account_id": "account-demo-2",
+        "day": 30,
+        "reason": "usage data missing; not marked behind on absent data"
+      }
+    ]
+  },
+  "handoff_manifest": {
+    "count": 1,
+    "drafts": [
+      {
+        "id": "draft-demo-1",
+        "account_id": "account-demo-1",
+        "kind": "comment",
+        "text": "Draft only: thank you for the discussion."
+      }
+    ],
+    "manifest_hash": "d972441928cf4ff7edbdf2a18b9ece89da4c6653f006687cf8de45d0f0727e71",
+    "status": "requires human review; nothing posted"
+  }
+}
+
